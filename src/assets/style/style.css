@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Girassol|Muli&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli';
+}
+
+main {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/more-leaves-on-green.png);
+}
+
+.card {
+    border: 2px solid rgb(20, 204, 143);
+    border-radius: 12px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    background: -webkit-linear-gradient(rgb(20, 204, 143), rgb(76, 216, 169));
+    color: white;
+    font-family: 'Girassol';
+}
+
+.content {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: teal;
+    padding: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        width: 90%;
+    }
+}
