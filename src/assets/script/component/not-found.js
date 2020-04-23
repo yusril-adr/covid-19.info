@@ -5,7 +5,7 @@ class NotFound extends HTMLElement {
     }
 
     set clickEvent(event) {
-        return document.querySelector("#notFoundButton").addEventListener("click", event);
+        this._clickEvent = event; 
     }
 
     renderIn() {
@@ -59,6 +59,8 @@ class NotFound extends HTMLElement {
             </div>
         </div>
         `
+
+        document.querySelector("#notFoundButton").addEventListener("click", this._clickEvent);
     }
 }
 

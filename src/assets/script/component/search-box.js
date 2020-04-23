@@ -8,7 +8,7 @@ class SearchBox extends HTMLElement {
     }
 
     set clickEvent(event) {
-        return document.querySelector("#searchButton").addEventListener("click", event);
+        this._clickEvent = event;
     }
 
     render() {
@@ -60,6 +60,7 @@ class SearchBox extends HTMLElement {
                 <button id="searchButton">Cari</button>
         </div>
         `
+        document.querySelector("#searchButton").addEventListener("click", this._clickEvent);
     }
 }
 
