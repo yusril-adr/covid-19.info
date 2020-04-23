@@ -1,14 +1,15 @@
 class NotFound extends HTMLElement {
     set message(message) {
         this._message = message;
-        this.renderIn();
+        this.render();
     }
 
     set clickEvent(event) {
-        return document.querySelector("#notFoundButton").addEventListener("click", event);
+        this._clickEvent = event;
+        document.querySelector("#notFoundButton").addEventListener("click", this._clickEvent);
     }
 
-    renderIn() {
+    render() {
         this.innerHTML = `
         <style>
             #not-found {
@@ -58,7 +59,7 @@ class NotFound extends HTMLElement {
                 <button id="notFoundButton">OK</button>
             </div>
         </div>
-        `
+        `;
     }
 }
 

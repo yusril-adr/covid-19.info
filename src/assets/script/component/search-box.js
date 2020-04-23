@@ -8,7 +8,8 @@ class SearchBox extends HTMLElement {
     }
 
     set clickEvent(event) {
-        return document.querySelector("#searchButton").addEventListener("click", event);
+        this._clickEvent = event;
+        document.querySelector("#searchButton").addEventListener("click", this._clickEvent);
     }
 
     render() {
@@ -59,7 +60,7 @@ class SearchBox extends HTMLElement {
                 <input type="text" placeholder="Cari Negara" id="search">
                 <button id="searchButton">Cari</button>
         </div>
-        `
+        `;
     }
 }
 
