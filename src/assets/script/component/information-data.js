@@ -81,8 +81,8 @@ class InformationData extends HTMLElement {
 
             <div class="data">
                 <p>Positif : ${this.positive}</p>
-                <p>Sembuh : ${this.deaths}</p>
-                <p>Meninggal : ${this.recovered}</p>
+                <p>Sembuh : ${this.recovered}</p>
+                <p>Meninggal : ${this.deaths}</p>
             </div>
         </div>
         `
