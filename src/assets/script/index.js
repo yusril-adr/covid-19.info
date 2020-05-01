@@ -3,7 +3,7 @@ import "./component/jumbotron-title.js";
 import "./component/information-data.js";
 import "./component/search-box.js";
 import "./component/copyright-social.js";
-import "./component/not-found.js"
+import "./component/not-found.js";
 import DataSource from "./data/source.js";
 
 const main = () => {

@@ -6,7 +6,7 @@ Source Code website untuk menampilkan data-data beberapa negara yang terkena dam
 Pastikan desktop anda sudah terinstall node package manager terlebih dahulu
 
 ```branch 
-npm install pada terminal
+npm install
 ``` 
 ```branch 
 npm run start-dev
