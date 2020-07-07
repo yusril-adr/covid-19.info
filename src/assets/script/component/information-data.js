@@ -6,9 +6,10 @@ class InformationData extends HTMLElement {
     }
 
     set search(country) {
-        [this.region, this.positive, 
-            this.deaths, this.recovered] = [country.attributes.Country_Region, country.attributes.Confirmed, 
-                country.attributes.Deaths, country.attributes.Recovered];         
+        this.region = country.attributes.Country_Region;
+        this.positive = country.attributes.Confirmed;
+        this.deaths = country.attributes.Deaths;
+        this.recovered = country.attributes.Recovered;
         this.render();
     }
 

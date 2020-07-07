@@ -26,7 +26,7 @@ class NotFound extends HTMLElement {
             
             .errorBox {
                 width: 250px;
-                height: 100px;
+                padding: 15px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -36,9 +36,12 @@ class NotFound extends HTMLElement {
                 animation-duration: .3s;
             }
 
+            .errorBox p {
+                margin-bottom: 10px;
+            }
+
             #notFoundButton {
                 width: 50px;
-                margin-top: 10px;
                 background-color: rgb(20, 204, 143);
                 color: white;
                 font-size: 18px;

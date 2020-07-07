@@ -5,6 +5,9 @@ class DataSource {
             return response.json();
         })
         .then(responseJson => {
+            if (responseJson === null) {
+                return Promise.reject(`Api sedang down, mohon coba lagi nanti setelah beberapa saat.`);
+            }
             return responseJson.filter(country => {
                 return country.attributes.Country_Region.toUpperCase() === (keyword.toUpperCase());
             })
