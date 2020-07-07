@@ -15,7 +15,7 @@ Pada console akan terlihat link localhost yang bisa anda gunakan.
 
 ## Link Website
 
-https://covid19info.imfast.io
+https://yusril-adr.github.io/covid-19.info/
 
 ## Thanks To
 Data Pandemi Covid-19 by Teguh Aprianto.
